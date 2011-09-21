@@ -1,0 +1,19 @@
+<?php 
+namespace wp2static\settings; 
+
+use wp2static;
+?>
+<div class="wrap">
+    <div class="icon32" id="icon-options-general"><br /></div>
+    
+    <h2>WP2Static Options</h2>
+    
+    <form method="post" action="options.php">
+        <?php settings_fields(wp2static\NAME . '_options'); ?>
+        <?php do_settings_sections(wp2static\SETTINGS); ?>
+        
+        <p class="submit">
+            <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
+        </p>
+    </form>
+</div>

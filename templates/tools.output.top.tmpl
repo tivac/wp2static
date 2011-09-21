@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<style>
+    body { margin: 0; padding: 0; background: #242424; color: #F6F3E8; }
+    div { height: 600px; overflow: auto; }
+    pre { margin: 0; padding: 10px 20px; height: 100%; }
+</style>
+<div id="content">
+    <script>
+        var div = document.getElementById("content"),
+            scroll = function() {
+                div.scrollTop = div.scrollHeight;
+            },
+            interval = window.setInterval(scroll, 500);
+    </script>
+    
+    <pre>
