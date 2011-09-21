@@ -48,7 +48,7 @@ class Exporter {
         
         $this->urls = array();
         
-        //$this->exportAll();
+        $this->exportAll();
     }
     
     //grab every URL we can get our hands on
